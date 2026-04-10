@@ -5,7 +5,7 @@
    Handles: desktop collapse/expand, mobile/tablet overlay drawer,
    section toggle, click highlight, and search filtering.
 
-   Include via: <script src="../predefined html,css components/sidemenu.js"></script>
+   Include via: <script src="../predefined-components/sidemenu.js"></script>
    ============================================================ */
 
 (function () {

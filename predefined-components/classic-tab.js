@@ -1,7 +1,7 @@
 /* ============================================================
    CLASSIC TAB — Predefined JavaScript
    Handles tab switching for the classic-tab component.
-   Include via: <script src="../predefined html,css components/classic-tab.js"></script>
+   Include via: <script src="../predefined-components/classic-tab.js"></script>
    ============================================================ */
 
 (function () {

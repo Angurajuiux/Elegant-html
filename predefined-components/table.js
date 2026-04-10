@@ -1,7 +1,7 @@
 /* ============================================================
    TABLE — Predefined JavaScript
    Checkbox selection (3-state), row highlight, actionbar refresh.
-   Include via: <script src="../predefined html,css components/table.js"></script>
+   Include via: <script src="../predefined-components/table.js"></script>
    ============================================================ */
 
 (function () {

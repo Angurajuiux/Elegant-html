@@ -4,7 +4,7 @@
    keeps the active tab visible, overflows the rest to "...".
    On desktop (>1024px) all tabs are visible, no overflow.
 
-   Include via: <script src="../predefined html,css components/topnavbar.js"></script>
+   Include via: <script src="../predefined-components/topnavbar.js"></script>
    ============================================================ */
 
 (function () {
