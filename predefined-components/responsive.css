@@ -190,6 +190,9 @@
     justify-content: flex-start;
     gap: 16px;
   }
+  .topnavbar__logo {
+    padding-left: 0;
+  }
   .topnavbar__right {
     margin-left: auto;
   }
@@ -417,9 +420,6 @@
    ============================================================ */
 @media (max-width: 480px) {
 
-  .topnavbar__logo-text {
-    display: none;
-  }
   .topnavbar__icons .topnavbar__icon-btn:nth-child(3) {
     display: none;
   }
