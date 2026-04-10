@@ -1,0 +1,52 @@
+<!--
+  ============================================================
+  ACTIONBAR — Predefined HTML Component
+  ============================================================
+  Table toolbar: search, filter, pagination, view toggle, refresh.
+
+  CONFIGURATION:
+  - Left icons:      Add/remove icon buttons in actionbar__left
+  - Pagination:      Update text in actionbar__pagination
+  - Right icons:     Add/remove icon buttons in actionbar__right
+
+  AVAILABLE ICON BUTTONS:
+    icon-actionbar-search.svg   — Search
+    icon-actionbar-filter.svg   — Filter
+    icon-chevron-left.svg       — Previous page
+    icon-chevron-right.svg      — Next page
+    icon-view-type.svg          — View toggle (grid/list)
+    icon-actionbar-refresh.svg  — Refresh
+
+  CSS:  tokens.css + table.css
+  JS:   table.js  (refresh spin animation)
+  ============================================================
+-->
+
+<div class="actionbar">
+  <div class="actionbar__left">
+    <button class="actionbar__icon-btn" title="Search">
+      <img src="../assets/icons/icon-actionbar-search.svg" alt="" />
+    </button>
+    <div class="actionbar__separator"></div>
+    <button class="actionbar__icon-btn" title="Filter">
+      <img src="../assets/icons/icon-actionbar-filter.svg" alt="" />
+    </button>
+  </div>
+  <div class="actionbar__right">
+    <span class="actionbar__pagination">1-25 <i>of</i> <b>100</b></span>
+    <button class="actionbar__nav-btn" title="Previous">
+      <img src="../assets/icons/icon-chevron-left.svg" alt="" />
+    </button>
+    <button class="actionbar__nav-btn" title="Next">
+      <img src="../assets/icons/icon-chevron-right.svg" alt="" />
+    </button>
+    <div class="actionbar__separator"></div>
+    <button class="actionbar__icon-btn actionbar__icon-btn--view" title="View">
+      <img src="../assets/icons/icon-view-type.svg" alt="" />
+    </button>
+    <div class="actionbar__separator"></div>
+    <button class="actionbar__icon-btn" title="Refresh">
+      <img src="../assets/icons/icon-actionbar-refresh.svg" alt="" />
+    </button>
+  </div>
+</div>

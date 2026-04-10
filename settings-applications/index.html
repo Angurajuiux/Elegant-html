@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings - Applications</title>
+
+  <!-- Predefined CSS Components -->
+  <link rel="stylesheet" href="../predefined html,css components/tokens.css" />
+  <link rel="stylesheet" href="../predefined html,css components/layout.css" />
+  <link rel="stylesheet" href="../predefined html,css components/topnavbar.css" />
+  <link rel="stylesheet" href="../predefined html,css components/sidemenu.css?v=2" />
+  <link rel="stylesheet" href="../predefined html,css components/header.css" />
+  <link rel="stylesheet" href="../predefined html,css components/classic-tab.css" />
+  <link rel="stylesheet" href="../predefined html,css components/table.css" />
+  <link rel="stylesheet" href="../predefined html,css components/responsive.css" />
+</head>
+<body>
+<!-- Sidebar overlay backdrop (mobile/tablet) -->
+<div class="sidemenu-backdrop"></div>
+
+<div class="app-shell">
+
+  <!-- ═══════════════ TOPNAVBAR (78px) ═══════════════ -->
+  <header class="topnavbar" data-active-tab="Settings">
+
+    <!-- Row 1: Brand Bar (h=44, bg=#272D42) -->
+    <div class="topnavbar__row1">
+      <div class="topnavbar__row1-container">
+        <button class="topnavbar__hamburger" title="Menu" aria-label="Toggle navigation">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="5" x2="17" y2="5"/><line x1="3" y1="10" x2="17" y2="10"/><line x1="3" y1="15" x2="17" y2="15"/>
+          </svg>
+        </button>
+        <a href="#" class="topnavbar__logo">
+          <img class="topnavbar__logo-icon" src="../assets/icons/logo-log360.svg" alt="Log360" />
+          <span class="topnavbar__logo-text">Log360</span>
+        </a>
+
+        <div class="topnavbar__right">
+          <span class="topnavbar__subscription">Subscription</span>
+          <div class="topnavbar__divider"></div>
+
+          <div class="topnavbar__icons">
+            <button class="topnavbar__icon-btn" title="Notifications">
+              <img src="../assets/icons/icon-notification.svg" alt="" />
+              <span class="topnavbar__badge topnavbar__badge--blue">8</span>
+            </button>
+            <button class="topnavbar__icon-btn" title="Alerts">
+              <img src="../assets/icons/icon-notification.svg" alt="" />
+              <span class="topnavbar__badge topnavbar__badge--red">9+</span>
+            </button>
+            <button class="topnavbar__icon-btn" title="Help">
+              <img src="../assets/icons/icon-question.svg" alt="" />
+            </button>
+          </div>
+
+          <button class="topnavbar__avatar" title="Account">
+            <img src="../assets/icons/icon-user-avatar.svg" alt="User" />
+          </button>
+
+          <button class="topnavbar__grid" title="Apps">
+            <img src="../assets/icons/icon-apps-grid.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Nav Tabs + Search (h=34, bg=#343B52) -->
+    <div class="topnavbar__row2">
+      <div class="topnavbar__row2-container">
+        <nav class="topnavbar__tabs">
+          <a href="#" class="topnavbar__tab topnavbar__tab--unselected">Dashboard</a>
+          <a href="#" class="topnavbar__tab topnavbar__tab--unselected">Reports</a>
+          <a href="#" class="topnavbar__tab topnavbar__tab--unselected">Compliance</a>
+          <a href="#" class="topnavbar__tab topnavbar__tab--unselected">Search</a>
+          <a href="#" class="topnavbar__tab topnavbar__tab--unselected">Correlation</a>
+          <a href="#" class="topnavbar__tab topnavbar__tab--unselected">Alert</a>
+          <a href="#" class="topnavbar__tab topnavbar__tab--unselected">Cloud Protection</a>
+          <a href="#" class="topnavbar__tab topnavbar__tab--unselected">Settings</a>
+          <a href="#" class="topnavbar__tab topnavbar__tab--unselected">Support</a>
+        </nav>
+        <button class="topnavbar__more" title="More tabs" aria-label="Show all tabs">
+          <svg viewBox="0 0 18 18" fill="#FFFFFF">
+            <circle cx="3" cy="9" r="1.8"/><circle cx="9" cy="9" r="1.8"/><circle cx="15" cy="9" r="1.8"/>
+          </svg>
+        </button>
+
+        <div class="topnavbar__segment">
+          <div class="topnavbar__search">
+            <img src="../assets/icons/icon-search.svg" alt="" style="width:14px; height:14px;" />
+            <input type="text" placeholder="Log Search" />
+          </div>
+          <button class="topnavbar__add-btn">
+            <img src="../assets/icons/icon-plus.svg" alt="" style="width:10px; height:10px;" />
+            <span>Add</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════ BODY ═══════════════ -->
+  <div class="app-body">
+
+    <!-- ═══════ SIDEMENU (w=240) ═══════ -->
+    <aside class="sidemenu" data-active-item="Applications">
+      <div class="sidemenu__scroll scrollbar-thin">
+
+        <!-- Search -->
+        <div class="sidemenu__search-wrap">
+          <div class="sidemenu__search">
+            <img src="../assets/icons/icon-search-settings.svg" alt="" />
+            <input type="text" placeholder="Search Settings" />
+          </div>
+        </div>
+
+        <!-- ── Log Source Configuration ── -->
+        <div class="sidemenu__section">
+          <button class="sidemenu__l1">
+            <img src="../assets/icons/icon-sm-chevron-right.svg" alt="" class="sidemenu__chevron" />
+            <img src="../assets/icons/icon-troubleshoot.svg" alt="" class="sidemenu__l1-icon" />
+            <span>Log Source Configuration</span>
+          </button>
+          <a href="#" class="sidemenu__item" style="display:none">Devices</a>
+          <a href="#" class="sidemenu__item" style="display:none">Applications</a>
+          <a href="#" class="sidemenu__item" style="display:none">Import Logs</a>
+          <a href="#" class="sidemenu__item" style="display:none">Manage Cloud Sources</a>
+          <a href="#" class="sidemenu__item" style="display:none">File Integrity Monitoring</a>
+          <a href="#" class="sidemenu__item" style="display:none">Log Forwarding</a>
+        </div>
+
+        <!-- ── Admin Settings (collapsed by default) ── -->
+        <div class="sidemenu__section">
+          <button class="sidemenu__l1">
+            <img src="../assets/icons/icon-sm-chevron-right.svg" alt="" class="sidemenu__chevron" />
+            <img src="../assets/icons/icon-admin-settings.svg" alt="" class="sidemenu__l1-icon" />
+            <span>Admin Settings</span>
+          </button>
+          <!-- Management -->
+          <div class="sidemenu__l2-subheader" style="display:none">Management</div>
+          <a href="#" class="sidemenu__item" style="display:none">Manage Agents</a>
+          <a href="#" class="sidemenu__item" style="display:none">Manage Log Source Groups</a>
+          <a href="#" class="sidemenu__item" style="display:none">User Management</a>
+          <a href="#" class="sidemenu__item" style="display:none">Technician Audit</a>
+          <a href="#" class="sidemenu__item" style="display:none">Threat Management</a>
+          <a href="#" class="sidemenu__item" style="display:none">Account Settings</a>
+          <a href="#" class="sidemenu__item" style="display:none">Listener Ports</a>
+          <a href="#" class="sidemenu__item" style="display:none">Auto Device Configration</a>
+          <!-- MarketPlace -->
+          <div class="sidemenu__l2-subheader" style="display:none">MarketPlace</div>
+          <a href="#" class="sidemenu__item" style="display:none">All Extensions</a>
+          <a href="#" class="sidemenu__item" style="display:none">Installed Extensions</a>
+          <a href="#" class="sidemenu__item" style="display:none">Extension Profiles</a>
+          <!-- Product Customization -->
+          <div class="sidemenu__l2-subheader" style="display:none">Product Customization</div>
+          <a href="#" class="sidemenu__item" style="display:none">Product Settings</a>
+          <a href="#" class="sidemenu__item" style="display:none">Privacy Settings</a>
+          <a href="#" class="sidemenu__item" style="display:none">Working Hour Settings</a>
+          <a href="#" class="sidemenu__item" style="display:none">Custom Log Format</a>
+          <!-- Data Storage -->
+          <div class="sidemenu__l2-subheader" style="display:none">Data Storage</div>
+          <a href="#" class="sidemenu__item" style="display:none">Storage Tiers</a>
+          <a href="#" class="sidemenu__item" style="display:none">Log Collection Filters</a>
+          <a href="#" class="sidemenu__item" style="display:none">Reload Archive Logs</a>
+          <a href="#" class="sidemenu__item" style="display:none">Log Forwarding</a>
+          <!-- General -->
+          <div class="sidemenu__l2-subheader" style="display:none">General</div>
+          <a href="#" class="sidemenu__item" style="display:none">My Account</a>
+          <a href="#" class="sidemenu__item" style="display:none">Tags</a>
+          <a href="#" class="sidemenu__item" style="display:none">License</a>
+          <!-- Developer Space -->
+          <div class="sidemenu__l2-subheader" style="display:none">Developer Space</div>
+          <a href="#" class="sidemenu__item" style="display:none">Custom Widgets</a>
+          <!-- Zia -->
+          <div class="sidemenu__l2-subheader" style="display:none">Zia</div>
+          <a href="#" class="sidemenu__item" style="display:none">Insights</a>
+        </div>
+
+        <!-- ── System Settings (collapsed by default) ── -->
+        <div class="sidemenu__section">
+          <button class="sidemenu__l1">
+            <img src="../assets/icons/icon-sm-chevron-right.svg" alt="" class="sidemenu__chevron" />
+            <img src="../assets/icons/icon-system-settings.svg" alt="" class="sidemenu__l1-icon" />
+            <span>System Settings</span>
+          </button>
+          <a href="#" class="sidemenu__item" style="display:none">Server CA Management</a>
+          <a href="#" class="sidemenu__item" style="display:none">Certificate Trust Store</a>
+        </div>
+      </div>
+
+      <!-- Bottom bar (slider close icon, right-aligned) -->
+      <div class="sidemenu__bottom">
+        <button class="sidemenu__bottom-btn" title="Collapse sidebar">
+          <img src="../assets/icons/icon-slider-close.svg" alt="" />
+        </button>
+      </div>
+    </aside>
+
+    <!-- Expand button (visible when sidebar collapsed) -->
+    <button class="sidemenu-expand" id="sidebarExpand" title="Expand sidebar">
+      <img src="../assets/icons/icon-slider-close.svg" alt="" />
+    </button>
+
+    <!-- ═══════ MAIN CONTENT ═══════ -->
+    <main class="main-content">
+
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1 class="page-header__title">Applications</h1>
+        <button class="page-header__help" title="Help">
+          <img src="../assets/icons/icon-help.svg" alt="" style="width:14px; height:14px;" />
+        </button>
+      </div>
+
+      <!-- Classic Tab -->
+      <div class="classic-tab">
+        <div class="classic-tab__headers">
+          <button class="classic-tab__header classic-tab__header--selected">General Applications</button>
+          <button class="classic-tab__header classic-tab__header--unselected">Security Applications</button>
+          <button class="classic-tab__header classic-tab__header--unselected">Print Server</button>
+          <div class="classic-tab__filler"></div>
+        </div>
+
+        <div class="classic-tab__body scrollbar-thin">
+          <div class="classic-tab__content">
+
+            <!-- Button Row -->
+            <div class="button-row">
+              <button class="btn-primary">
+                <img src="../assets/icons/icon-plus.svg" alt="" style="width:10px; height:10px;" />
+                <span>Add General Applications</span>
+              </button>
+            </div>
+
+            <!-- ActionBar -->
+            <div class="actionbar">
+              <div class="actionbar__left">
+                <button class="actionbar__icon-btn" title="Search">
+                  <img src="../assets/icons/icon-actionbar-search.svg" alt="" />
+                </button>
+                <div class="actionbar__separator"></div>
+                <button class="actionbar__icon-btn" title="Filter">
+                  <img src="../assets/icons/icon-actionbar-filter.svg" alt="" />
+                </button>
+              </div>
+              <div class="actionbar__right">
+                <span class="actionbar__pagination">1-25 <i>of</i> <b>100</b></span>
+                <button class="actionbar__nav-btn" title="Previous">
+                  <img src="../assets/icons/icon-chevron-left.svg" alt="" />
+                </button>
+                <button class="actionbar__nav-btn" title="Next">
+                  <img src="../assets/icons/icon-chevron-right.svg" alt="" />
+                </button>
+                <div class="actionbar__separator"></div>
+                <button class="actionbar__icon-btn actionbar__icon-btn--view" title="View">
+                  <img src="../assets/icons/icon-view-type.svg" alt="" />
+                </button>
+                <div class="actionbar__separator"></div>
+                <button class="actionbar__icon-btn" title="Refresh">
+                  <img src="../assets/icons/icon-actionbar-refresh.svg" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <!-- Data Table -->
+            <div class="data-table-wrap">
+              <table class="data-table">
+                <colgroup>
+                  <col style="width:48px;min-width:48px;" />
+                  <col style="width:130px;min-width:110px;" />
+                  <col style="width:120px;min-width:100px;" />
+                  <col style="width:140px;min-width:120px;" />
+                  <col style="width:130px;min-width:110px;" />
+                  <col style="width:155px;min-width:130px;" />
+                  <col style="width:100px;min-width:80px;" />
+                  <col style="width:90px;min-width:80px;" />
+                  <col style="width:130px;min-width:110px;" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="cell-checkbox"><img src="../assets/icons/icon-checkbox.svg" alt="" /></th>
+                    <th>Actions</th>
+                    <th>Log Source</th>
+                    <th>Log Source Type</th>
+                    <th>Agent</th>
+                    <th>Last Message Time</th>
+                    <th>Next Scan On</th>
+                    <th>Status</th>
+                    <th>Reports/Logs View</th>
+                  </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</div>
+
+<!-- Bottom sheet for mobile/tablet tab navigation -->
+<div class="nav-bottom-sheet" id="navBottomSheet">
+  <div class="nav-bottom-sheet__backdrop"></div>
+  <div class="nav-bottom-sheet__panel">
+    <div class="nav-bottom-sheet__handle"></div>
+    <ul class="nav-bottom-sheet__list">
+      <li><button class="nav-bottom-sheet__item" data-tab="Dashboard">Dashboard</button></li>
+      <li><button class="nav-bottom-sheet__item" data-tab="Reports">Reports</button></li>
+      <li><button class="nav-bottom-sheet__item" data-tab="Compliance">Compliance</button></li>
+      <li><button class="nav-bottom-sheet__item" data-tab="Search">Search</button></li>
+      <li><button class="nav-bottom-sheet__item" data-tab="Correlation">Correlation</button></li>
+      <li><button class="nav-bottom-sheet__item" data-tab="Alert">Alert</button></li>
+      <li><button class="nav-bottom-sheet__item" data-tab="Cloud Protection">Cloud Protection</button></li>
+      <li><button class="nav-bottom-sheet__item" data-tab="Settings">Settings</button></li>
+      <li><button class="nav-bottom-sheet__item" data-tab="Support">Support</button></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  const ICON = '../assets/icons/';
+  const data = [
+    { ip:'192.168.2.171', type:'SQL Server',          agent:'logqa-w19-9',   lastMsg:'-',                   nextScan:'-', status:'Disabled', link:'View Reports' },
+    { ip:'192.168.2.172', type:'SQL Server',          agent:'logqa-w19-9',   lastMsg:'-',                   nextScan:'-', status:'Disabled', link:'View Reports' },
+    { ip:'192.168.2.173', type:'SQL Server',          agent:'logqa-w19-9',   lastMsg:'2026-01-13 15:51:34', nextScan:'-', status:'Disabled', link:'View Reports' },
+    { ip:'192.168.2.20',  type:'Oracle',              agent:'logqa-w16-jp1', lastMsg:'2026-01-13 07:45:00', nextScan:'-', status:'Disabled', link:'View Reports' },
+    { ip:'192.168.2.21',  type:'Oracle',              agent:'logqa-w16-jp1', lastMsg:'2026-01-12 19:57:36', nextScan:'-', status:'Disabled', link:'View Reports' },
+    { ip:'192.168.2.4',   type:'Terminal',            agent:'logqa-w16-jp1', lastMsg:'2026-01-12 19:52:44', nextScan:'-', status:'Disabled', link:'View Reports' },
+    { ip:'192.168.2.5',   type:'Syslog Application', agent:'logqa-w16-jp1', lastMsg:'2026-01-12 19:57:36', nextScan:'-', status:'Disabled', link:'View Logs' },
+    { ip:'192.168.2.6',   type:'Sysmon',             agent:'logqa-w16-jp1', lastMsg:'2026-01-12 19:52:44', nextScan:'-', status:'Disabled', link:'View Logs' },
+    { ip:'192.168.2.7',   type:'Password Manager Pro',agent:'logqa-jp1',    lastMsg:'2022-06-01 12:30:00', nextScan:'-', status:'Disabled', link:'View Logs' },
+    { ip:'192.168.2.8',   type:'ITOM solution',      agent:'logqa-w16-jp1', lastMsg:'2026-01-12 19:57:36', nextScan:'-', status:'Disabled', link:'View Logs' },
+  ];
+
+  const tbody = document.getElementById('table-body');
+  data.forEach(row => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="cell-checkbox"><img src="${ICON}icon-checkbox.svg" alt="" /></td>
+      <td>
+        <div class="cell-actions">
+          <img src="${ICON}icon-action-approve.svg" alt="Approve" title="Approve" />
+          <img src="${ICON}icon-action-edit.svg" alt="Edit" title="Edit" />
+          <img src="${ICON}icon-action-delete.svg" alt="Delete" title="Delete" />
+          <img src="${ICON}icon-action-more.svg" alt="More" title="More" />
+        </div>
+      </td>
+      <td>${row.ip}</td>
+      <td>${row.type}</td>
+      <td>
+        <div class="cell-icon-text">
+          <img src="${ICON}icon-agent.svg" alt="" />
+          <span>${row.agent}</span>
+        </div>
+      </td>
+      <td>${row.lastMsg}</td>
+      <td>${row.nextScan}</td>
+      <td>
+        <div class="cell-status">
+          <img src="${ICON}icon-status-disabled.svg" alt="" />
+          <span>${row.status}</span>
+        </div>
+      </td>
+      <td><a href="#" class="cell-link">${row.link}</a></td>
+    `;
+    tbody.appendChild(tr);
+  });
+</script>
+
+<!-- Predefined JS Components -->
+<script src="../predefined html,css components/topnavbar.js"></script>
+<script src="../predefined html,css components/sidemenu.js"></script>
+<script src="../predefined html,css components/classic-tab.js"></script>
+<script src="../predefined html,css components/table.js"></script>
+</body>
+</html>

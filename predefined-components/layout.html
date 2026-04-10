@@ -1,0 +1,64 @@
+<!--
+  ============================================================
+  LAYOUT SHELL — Predefined HTML Skeleton
+  ============================================================
+  Use this as the base template for any new page.
+  Replace {{PAGE_TITLE}}, {{ACTIVE_TAB}}, {{ACTIVE_MENU_ITEM}},
+  and fill in the main-content area.
+
+  REQUIRED CSS (in this order):
+    tokens.css → layout.css → topnavbar.css → sidemenu.css
+    → header.css → classic-tab.css → table.css → responsive.css
+
+  REQUIRED JS (at bottom of body):
+    topnavbar.js → sidemenu.js → classic-tab.js → table.js
+  ============================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{PAGE_TITLE}}</title>
+
+  <!-- Predefined CSS -->
+  <link rel="stylesheet" href="../predefined html,css components/tokens.css" />
+  <link rel="stylesheet" href="../predefined html,css components/layout.css" />
+  <link rel="stylesheet" href="../predefined html,css components/topnavbar.css" />
+  <link rel="stylesheet" href="../predefined html,css components/sidemenu.css" />
+  <link rel="stylesheet" href="../predefined html,css components/header.css" />
+  <link rel="stylesheet" href="../predefined html,css components/classic-tab.css" />
+  <link rel="stylesheet" href="../predefined html,css components/table.css" />
+  <link rel="stylesheet" href="../predefined html,css components/responsive.css" />
+</head>
+<body>
+<!-- Sidebar overlay backdrop (mobile/tablet) -->
+<div class="sidemenu-backdrop"></div>
+
+<div class="app-shell">
+
+  <!-- TOPNAVBAR: paste from topnavbar.html, set active tab -->
+
+  <div class="app-body">
+
+    <!-- SIDEMENU: paste from sidemenu.html, set active item -->
+
+    <main class="main-content">
+
+      <!-- HEADER: paste from header.html, set title -->
+
+      <!-- CONTENT: classic-tab, table, form, etc. -->
+
+    </main>
+  </div>
+
+</div>
+
+<!-- Predefined JS -->
+<script src="../predefined html,css components/topnavbar.js"></script>
+<script src="../predefined html,css components/sidemenu.js"></script>
+<script src="../predefined html,css components/classic-tab.js"></script>
+<script src="../predefined html,css components/table.js"></script>
+</body>
+</html>
