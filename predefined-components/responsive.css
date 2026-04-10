@@ -182,9 +182,16 @@
    ============================================================ */
 @media (max-width: 1024px) {
 
-  /* Show hamburger in Row 1 */
+  /* Show hamburger in Row 1, logo stays left-aligned next to it */
   .topnavbar__hamburger {
     display: flex;
+  }
+  .topnavbar__row1-container {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .topnavbar__right {
+    margin-left: auto;
   }
 
   /* Tabs: let JS manage overflow, no CSS scroll */
@@ -218,9 +225,6 @@
     box-shadow: 4px 0 16px rgba(0, 0, 0, 0.15);
   }
 
-  .sidemenu__bottom {
-    display: none;
-  }
   .sidemenu-expand {
     display: none !important;
   }
@@ -229,6 +233,11 @@
     width: var(--sidebar-width);
     border-right: 1px solid var(--sidebar-stroke);
     pointer-events: auto;
+  }
+
+  .sidemenu__bottom-btn img,
+  .sidemenu__bottom-btn svg {
+    transform: rotate(180deg);
   }
 
   .app-body {
@@ -310,9 +319,6 @@
     opacity: 1;
     box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2);
   }
-  .sidemenu__bottom {
-    display: none;
-  }
   .sidemenu-expand {
     display: none !important;
   }
@@ -320,6 +326,11 @@
     width: 280px;
     border-right: 1px solid var(--sidebar-stroke);
     pointer-events: auto;
+  }
+
+  .sidemenu__bottom-btn img,
+  .sidemenu__bottom-btn svg {
+    transform: rotate(180deg);
   }
 
   /* ── Main content: full width, reduced padding ── */

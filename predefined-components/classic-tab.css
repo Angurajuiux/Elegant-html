@@ -9,8 +9,6 @@
 .classic-tab {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  min-height: 0;
   padding-top: var(--classic-tab-padding-top);
 }
 
@@ -61,16 +59,14 @@
   border: 1px solid var(--classic-tab-stroke);
 }
 
-/* Tab body */
+/* Tab body — hugs content (matches Figma primaryAxisSizingMode: AUTO) */
 .classic-tab__body {
-  flex: 1;
   background: var(--classic-tab-body-bg);
   border: 1px solid var(--classic-tab-stroke);
   border-top: none;
-  overflow-y: auto;
 }
 
-/* Inner content of tab body */
+/* Inner content — matches Figma "Classic Tab table outer frame" padding: 16 all sides */
 .classic-tab__content {
   padding: var(--classic-tab-body-padding);
 }

@@ -54,16 +54,26 @@
     if (chevron) chevron.src = CHEVRON_DOWN;
   }
 
-  /* ── Desktop: Collapse / Expand sidebar ── */
+  /* ── Collapse / Expand sidebar (desktop + overlay close) ── */
   function initSidebarToggle() {
     var sidebar    = document.querySelector('.sidemenu');
     var collapseBtn = document.querySelector('.sidemenu__bottom-btn');
     var expandBtn  = document.getElementById('sidebarExpand');
+    var backdrop   = document.querySelector('.sidemenu-backdrop');
 
     if (!sidebar || !collapseBtn || !expandBtn) return;
 
+    function closeOverlay() {
+      sidebar.classList.remove('sidemenu--overlay-open');
+      if (backdrop) backdrop.classList.remove('sidemenu-backdrop--visible');
+      document.body.style.overflow = '';
+    }
+
     function toggle() {
-      if (isOverlayMode()) return;
+      if (isOverlayMode()) {
+        closeOverlay();
+        return;
+      }
       var collapsed = sidebar.classList.toggle('sidemenu--collapsed');
       expandBtn.classList.toggle('sidemenu-expand--visible', collapsed);
       collapseBtn.title = collapsed ? 'Expand sidebar' : 'Collapse sidebar';
